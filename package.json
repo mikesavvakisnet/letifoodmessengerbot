@@ -1,0 +1,32 @@
+{
+  "dependencies": {
+    "bootbot": "^1.0.15",
+    "dateformat": "^3.0.3",
+    "node-schedule": "^1.3.0",
+    "request": "^2.87.0"
+  },
+  "name": "letifoodmessengerbot",
+  "version": "1.0.0",
+  "description": "LetiFood messenger bot sends restaurant menu to students. Also, a student can ask specific day restaurant menu.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikesavvakisnet/letifoodmessengerbot.git"
+  },
+  "keywords": [
+    "bot",
+    "messenger-bot",
+    "food",
+    "university",
+    "nodejs"
+  ],
+  "author": "mikesavvakisnet",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/mikesavvakisnet/letifoodmessengerbot/issues"
+  },
+  "homepage": "https://github.com/mikesavvakisnet/letifoodmessengerbot#readme"
+}
