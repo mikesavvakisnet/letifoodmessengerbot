@@ -91,50 +91,48 @@ bot.on('postback:BORED_PAYLOAD', (payload, chat) => {
 
 });
 
-// TODO: Change it to run only once.
-// Run only ones
-//bot.setGreetingText("Είμαι εδώ για να σε ενημέρωνω για το φαγητό της λέσχης σου, μπορεί όμως κάποιες φορές να σου λέω και κάνενα ανέκδοτο");
-// bot.setPersistentMenu([
-//     {
-//         title: 'Φαγητό Σήμερα',
-//         type: 'postback',
-//         payload: 'FOOD_TODAY_PAYLOAD'
-//     },
-//     {
-//         title: 'Φαγητό Αύριο',
-//         type: 'postback',
-//         payload: 'FOOD_TOMORROW_PAYLOAD'
-//     },
-//     {
-//         title: 'Περισσότερα',
-//         type: 'nested',
-//         call_to_actions: [
-//             {
-//                 title: 'Βαριέμαι',
-//                 type: 'postback',
-//                 payload: 'BORED_PAYLOAD'
-//             }, {
-//                 title: 'Επανάληψη εγγραφής',
-//                 type: 'postback',
-//                 payload: 'REGISTER_AGAIN_PAYLOAD'
-//             },
-//             {
-//                 title: 'Github',
-//                 type: 'web_url',
-//                 url: 'https://google.com'
-//             },
-//             {
-//                 title: 'Επικοινωνία',
-//                 type: 'postback',
-//                 payload: 'CONTACT_INFO_PAYLOAD'
-//             }
-//         ]
-//     }
-// ], false);
-
 bot.setGetStartedButton((payload, chat) => {
     setupUser(payload, chat);
 });
+
+bot.setGreetingText("Είμαι εδώ για να σε ενημέρωνω για το φαγητό της λέσχης σου, μπορεί όμως κάποιες φορές να σου λέω και κάνενα ανέκδοτο");
+bot.setPersistentMenu([
+    {
+        title: 'Φαγητό Σήμερα',
+        type: 'postback',
+        payload: 'FOOD_TODAY_PAYLOAD'
+    },
+    {
+        title: 'Φαγητό Αύριο',
+        type: 'postback',
+        payload: 'FOOD_TOMORROW_PAYLOAD'
+    },
+    {
+        title: 'Περισσότερα',
+        type: 'nested',
+        call_to_actions: [
+            {
+                title: 'Βαριέμαι',
+                type: 'postback',
+                payload: 'BORED_PAYLOAD'
+            }, {
+                title: 'Επανάληψη εγγραφής',
+                type: 'postback',
+                payload: 'REGISTER_AGAIN_PAYLOAD'
+            },
+            {
+                title: 'Github',
+                type: 'web_url',
+                url: 'https://google.com'
+            },
+            {
+                title: 'Επικοινωνία',
+                type: 'postback',
+                payload: 'CONTACT_INFO_PAYLOAD'
+            }
+        ]
+    }
+], false);
 
 const setupUser = (payload, chat) => {
 
