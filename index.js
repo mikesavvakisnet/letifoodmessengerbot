@@ -23,6 +23,10 @@ bot.hear(['register', 'εγγραφή'], (payload, chat) => {
     setupUser(payload, chat);
 });
 
+bot.on('message', (payload, chat) => {
+    chat.say(`Hey! Οτιδήποτε χρειάζεσαι μπορείς να το επιλέξεις από το μενού!`);
+});
+
 bot.on('postback:REGISTER_AGAIN_PAYLOAD', (payload, chat) => {
     setupUser(payload, chat);
 });
